@@ -1,0 +1,12 @@
+[Unit]
+Description=1CML Disk Predictor
+After=network.target postgresql.service
+
+[Service]
+Type=oneshot
+User=1cml
+WorkingDirectory=/opt/1CML
+ExecStart=/usr/bin/python3 /opt/1CML/scripts/check_all_disks.py
+
+[Install]
+WantedBy=multi-user.target
