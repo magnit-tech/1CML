@@ -1,0 +1,14 @@
+[Unit]
+Description=1CML Anomaly Detector
+After=network.target clickhouse-server.service
+
+[Service]
+Type=simple
+User=1cml
+WorkingDirectory=/opt/1CML
+ExecStart=/usr/bin/python3 /opt/1CML/scripts/detect_anomalies.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
