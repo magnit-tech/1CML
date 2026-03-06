@@ -1,0 +1,181 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.prof
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+.virtualenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.pid
+*.seed
+*.pid.lock
+
+# Project specific
+logs/*.log
+logs/*.log.*
+models/*.pkl
+models/*.joblib
+*.db
+*.sqlite
+*.sqlite3
+data/
+temp/
+tmp/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Grafana
+grafana/data/
+grafana/log/
+
+# Prometheus
+prometheus/data/
+prometheus/log/
+
+# ClickHouse
+clickhouse/data/
+clickhouse/logs/
+
+# PostgreSQL
+postgresql/data/
+
+# Secrets
+secrets/
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Jupyter notebooks (если используются)
+.ipynb_checkpoints/
+*.ipynb
+
+# Test outputs
+test_output/
+test_results/
+*.test.log
+
+# Coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Distribution
+*.tar.gz
+*.zip
+*.whl
+*.rar
+*.7z
+
+# Backups
+backup/
+*.backup
+*.bak
+
+# Local configuration
+config.local.*
+*.local
+
+# Logs from all scripts
+disk_predict.log
+disk_metrics.log
+deadlocks.log
+anomaly_train.log
+detect_anomalies.log
+techlog_parser.log
+webhook.log
+itsm.log
+
+# Model files (large, not for git)
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.pb
+*.onnx
+
+# Grafana dashboards export (если не хотите коммитить)
+grafana/export/
+*.grafana.json
+
+# Prometheus alerts export
+prometheus/export/
+*.alerts.yml
+
+# VS Code workspace
+*.code-workspace
+
+# Windows specific
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS specific
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux specific
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
